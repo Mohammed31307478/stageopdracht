@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a:hover {
+    color: #9ea2a8;
+    font-weight: bold;
+}
+
+.navbarknop {
+    background-color: black;
+}
+
+.navbartext {
+    color: white;
+}
+
+.onderwerp {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section2 {
+    height: 10000px;
+    background-color: #1a202c;
+}
+
+.titelovermij h2 {
+    color: black;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 35px;
+}
+.overmij {
+    display: flex;
+    align-content: space-between;
+    /*position: absolute;*/
+    /*top: 150%;*/
+    vertical-align: center;
+}
+
+.overmijtekst {
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 1rem;
+    padding: .5rem .5rem;
+    border-radius: 5px;
+}
+
+.overmijtekst h1 {
+    padding: .2rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+/*.overmijtekst:nth-child(2) {*/
+/*    margin-right: 20px;*/
+/*    margin-left: 20px;*/
+/*}*/
+
+.overmijtekst h1{
+    color: black;
+    margin: 0;
+    /*background-color:black ;*/
+}
+.overmijtekst h2 {
+    color: black;
+    /*border-style: solid;*/
+    font-size: 18px;
+    display: flex;
+    text-align: center;
+    /*background-color: b!**!lack;*/
+}
+
+.overmijtekst .text {
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.footer {
+    /*position:absolute;*/
+    top: 190%;
+    display: flex;
+    list-style: none;
+    justify-content: center ;
+    padding: 0;
+}
+
+.footer li {
+    margin: 0 1rem;
+}
+
+img {
+    border-radius: 30%;
+    width: 50px;
+}
+.mi{
+    display: flex;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.delet{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+}
+body{
+/*background-color: #cbd5e0;*/
+background-image: url("/images/bg3.jpg");
+    background-size: 100%;
+}
+.label1{
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    font-variant: small-caps;
+font-size: 150%;
+
+}
+.vol{
+    position: absolute;
+    left: 75%;
+    top: 50%;
+}
+.all-items{
+    /*position: absolute;*/
+    margin-left: 50%;
+    transform: translateX(-50%);
+    word-spacing: 10px;
+    max-height: 20rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.all-items table {
+    font-size: 150%;
+    border-style: solid;
+    background-color: white;
+}
+.all-items th, .all-items td {
+    text-align: left;
+    padding: .4rem 1rem;
+}
+
+.registerlogin {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerlogin form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 5px 5px 20px 10px rgba(0,0,0,.2);
+}
+
+.registerlogin form label:not(.no--width) {
+    width: 10rem;
+    display: block;
+}
+
+.registerlogin form input:not(.no--width) {
+    width: 10rem;
+}
+
+.button {
+    display: inline;
+    background-color: rgb(185, 217, 221);
+    outline: none;
+    border: none;
+    padding: .4rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    margin-top: .1rem;
+    color: black;
+}
+.button:hover {
+    background-color: rgb(145, 145, 145);
+}
