@@ -46,8 +46,6 @@ html {
 .overmij {
     display: flex;
     align-content: space-between;
-    /*position: absolute;*/
-    /*top: 150%;*/
     vertical-align: center;
 }
 
@@ -68,23 +66,16 @@ html {
     text-align: center;
 }
 
-/*.overmijtekst:nth-child(2) {*/
-/*    margin-right: 20px;*/
-/*    margin-left: 20px;*/
-/*}*/
 
 .overmijtekst h1{
     color: black;
     margin: 0;
-    /*background-color:black ;*/
 }
 .overmijtekst h2 {
     color: black;
-    /*border-style: solid;*/
     font-size: 18px;
     display: flex;
     text-align: center;
-    /*background-color: b!**!lack;*/
 }
 
 .overmijtekst .text {

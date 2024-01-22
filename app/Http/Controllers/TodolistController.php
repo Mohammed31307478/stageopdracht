@@ -80,14 +80,6 @@ class TodolistController extends Controller
     {
         return view('update')->with(['todo' => $todo]);
 
-//        $todolist = Todolist::find($request->id);
-//        $todolist->name = $request->name;
-//        $todolist->image = $request->image;
-//        $todolist->informatie = $request->informatie;
-//        $todolist->saveOrFail();
-//        return view('welcome');
-
-
     }
 
     /**

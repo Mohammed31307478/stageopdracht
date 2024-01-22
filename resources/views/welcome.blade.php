@@ -22,7 +22,7 @@
 </div>
 
 
-<div class="onderwerp"><h1>Maak je items</h1></div>
+<div class="onderwerp"><h1>Maak je item</h1></div>
 @if ($errors->any())
     <div class="alert alert-danger">
         <ul>
@@ -35,7 +35,7 @@
 {{--MAAK JE IETEMS FORMULEER--}}
 <form class="mi" method="post" action="{{route('todo.store')}}" enctype="multipart/form-data">
     @csrf
-    <label class="label1"><h4>Naam voor je items </h4></label>
+    <label class="label1"><h4>Naam voor je item </h4></label>
     <input placeholder="naam" name="name" type="text">
 
     <label class="label1" for="fileinput"><h4> voeg een foto toe </h4></label>
@@ -45,6 +45,7 @@
     <input placeholder="opmerking" name="informatie" type="text">
     <input type="submit" placeholder="klaar">
 </form>
+
 
 <div class="all-items">
     <table>
@@ -69,7 +70,10 @@
 
         </tbody>
     </table>
+
 </div>
+
+
 
 {{--VOLTOOID FORMULEER--}}
 
@@ -81,7 +85,7 @@
 
     <div class="label1"><h4>Voltooid</h4></div>
     <select name="id">
-        <option>selecteer een ietems als die voltooid is</option>
+        <option>selecteer een ietem als die voltooid is</option>
         @foreach($todolists as $todolist)
 
             <option value={{$todolist->id}}>{{$todolist->name}}
@@ -106,7 +110,7 @@
     <div class="label1"><h4>Verwijderen</h4></div>
     {{--    @method('delete')--}}
     <select name="id">
-        <option>selecteer je product om te verwijderen</option>
+        <option>selecteer je item om te verwijderen</option>
         @foreach($todolists as $todolist)
             <option value="{{$todolist->id }}">{{$todolist->name ?? " "}}</option>
         @endforeach
